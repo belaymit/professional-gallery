@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import computer from '../assets/full-stack-roadmap.png';
+import computer from '../assets/comp_2-removebg-preview.png';
 
 export default function Hero() {
   return (
@@ -17,20 +17,21 @@ export default function Hero() {
         <h1 className={`${styles.heroHeadText} text-white`}>
           Hello, I'm <span className='text-[#d46b41]'>Belay</span> B.
         </h1>
-        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+        <p className={`${styles.heroSubText} mt-2 text-white-100 z-50`}>
           Front-end Developer, ML Enthusiast <br className='sm:block hidden' />
           user interfaces and web applications
         </p>
       </div>
     </div>
-    <div className='absolute inset-0 top-40 flex justify-center items-center gap-5'>
+    <div className='absolute inset-0 flex justify-center items-center gap-5' style={{
+      top: '15rem',
+    }}>
         <motion.img
         src={computer}
         alt='Image 2'
         className='object-contain w-full md:w-[50%]'
         animate={{
-          y: [0, -20, 0], 
-          rotate: [0, 10, 0],
+          y: [0, -20, 0]
         }}
     transition={{
       duration: 2, 
