@@ -4,13 +4,6 @@ import { educations } from "../../constants";
 type Experience = {
   experience:educations
  }
-
- const colors = ['#e74c3c', '#ed091b', 'green', 'orange'];
-
-const getRandomColor = () => {
-  return colors[Math.floor(Math.random() * colors.length)];
-};
-
 export default function EducationCard({ experience }:Experience){
   return (
     <VerticalTimelineElement
