@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my updated personal portfolio, developed using React.js, TypeScript, Three.js, and TailwindCSS. It serves as a comprehensive showcase of my projects and skills, highlighting my expertise and the technologies I use. This portfolio demonstrates my ability to build dynamic and visually appealing web applications, reflecting my proficiency in modern development practices.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built With
 
-## Expanding the ESLint configuration
+- React
+- Tailwind
+- TypeScript
+- three.js
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Live Demo
 
-- Configure the top-level `parserOptions` property like this:
+[Live Demo Link](https://belay-portfolio.netlify.app/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+- Browser
+- Vs Code
+### Setup
+```sh
+cd my-folder
+  git git@github.com:belaymit/professional-gallery.git
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Install
+```sh
+  cd professional-gallery
+  npm install
 ```
+### Usage
+```sh
+    npm run dev
+```
+### Run tests
+```sh
+    npm run test
+```
+### Deployment
+You can deploy this project:
+- GitHub pages
+- [render](https://dashboard.render.com/) 
+- [netlify](https://www.netlify.com/) or using any of your favored deployment platforms
+
+
+## Authors
+
+👤 **Belay Birhanu G**
+
+- GitHub: [@githubhandle](https://github.com/belaymit)
+- Twitter: [@twitterhandle](https://twitter.com/2belamit)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/belay-bgwa/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/belaymit/professional-gallery/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- I would like to thank the original designer [JavaScript Mastery](https://www.youtube.com/watch?v=0fYi8SGA20k&ab_channel=JavaScriptMastery)
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
