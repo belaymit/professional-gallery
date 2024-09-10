@@ -18,8 +18,8 @@ export default function Hero() {
           Hi, I'm <span className='text-[#d46b41]'>Belay</span>
         </h1>
         <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          Front-end Developer, user <br className='sm:block hidden' />
-          interfaces and web applications
+          Front-end Developer, ML Enthusiast <br className='sm:block hidden' />
+          user interfaces and web applications
         </p>
       </div>
     </div>
