@@ -33,6 +33,20 @@
   ); 
 }
 
+.redish-gradient {
+  background: #f12711; 
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  );
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); 
+}
+
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -205,5 +219,10 @@
 
 .testimonial__wrapper .slick-dots .slick-active {
   background: #ff4405 !important;
+  border-radius: 50% !important;
+}
+
+.projects__wrapper .slick-dots .slick-active {
+  background: #db4306 !important;
   border-radius: 50% !important;
 }

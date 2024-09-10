@@ -76,7 +76,7 @@ export default function Contact () {
     viewport={{ once: true, amount: 0.25 }}
     className={`${styles.padding} bg-black max-w-7xl mx-auto mb-10 rounded-md relative z-0`}
   >
-    <span className='hash-span' id="">
+    <span className='hash-span' id="contact">
       &nbsp;
     </span>
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`} >

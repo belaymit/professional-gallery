@@ -1,9 +1,6 @@
 import {
   backend,
-  javascript,
   typescript,
-  html,
-  css,
   reactjs,
   antd,
   redux,
@@ -34,9 +31,11 @@ import {
   iqbal,
   giovani,
   birhanu,
+  awesome_books,
 
   astu,
-  mit
+  mit,
+  michu_tech
 } from "../assets";
 
 export type NavLink = {
@@ -96,18 +95,7 @@ export type Technology = {
 };
 
 export const technologies: Technology[] = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
+
   {
     name: "TypeScript",
     icon: typescript,
@@ -163,7 +151,8 @@ export const technologies: Technology[] = [
   {
     name: 'Sass',
     icon: sass
-  }
+  },
+  
 ];
 
 export type Experience = {
@@ -183,12 +172,26 @@ export const experiences: Experience[] = [
     iconBg: "#f8f9f9",
     date: "September 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing web applications with a focus on writing fast, optimized, and clean code",
+      "Working with UI/UX designers to create user-friendly and visually appealing interfaces.",
+      "Working with the back-end team to ensure smooth integration and optimize app performance.",   
+      "Participating in code reviews to enhance quality and maintainability.",
+      "Ensuring responsive design and cross-browser compatibility for optimal user experience."
     ],
   },
+  {
+    title: "Project Manager",
+    company_name: "MichuTech Inc.",
+    icon: michu_tech,
+    iconBg: "#0e60b2",
+    date: "October 2023 - February 2024",
+    points: [
+      "Planning project timelines and ensuring timely delivery of milestones.",
+      "Testing functionality of web applications to guarantee quality and performance.",
+      "Reviewing code for consistency, optimization, and adherence to best practices.",
+      "Developing websites and ensuring they are responsive and cross-browser compatible."
+    ],
+  },  
   {
     title: "Frontend Developer, Intern",
     company_name: "10 Academy",
@@ -196,21 +199,21 @@ export const experiences: Experience[] = [
     iconBg: "#E6DEDD",
     date: "Jun 2023 - September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Writing comprehensive documentation for the codebase to enhance clarity and maintainability.",
+      "Implementing mobile view and Progressive Web App (PWA) features for the Tenx platform.",
+      "Collaborating with cross-functional teams to ensure a seamless and user-friendly experience.",
+      "Optimizing code for performance improvements across various devices and platforms."
     ],
-  },
+  },  
   {
     title: "Full stack Developer",
     company_name: "Microverse",
     icon: microverse,
-    iconBg: "#000",
+    iconBg: "#6b1de4",
     date: "Oct 2022 - June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Mentored junior web developers through code reviews, improving code quality and performance.",
+       "Advised on maintaining motivation for program longevity.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -222,12 +225,11 @@ export const experiences: Experience[] = [
     iconBg: "#383E56",
     date: "Jan 2019 - Jan 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed websites for hospitals, colleges, and retail stores, ensuring their functionality and user experience.",
+      "Designed UX for websites to provide intuitive and user-friendly interfaces.",
+      "Trained students in website development, covering modern web technologies and best practices.",
     ],
-  },
+  },  
   {
     title: "Instructor",
     company_name: "Haramaya University",
@@ -235,12 +237,11 @@ export const experiences: Experience[] = [
     iconBg: "#fff",
     date: "Oct 2018 - Oct 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Taught courses such as Database Management Systems, Machine Learning, C++, and Python.",
+      "Monitored and guided students on their final projects, ensuring quality and completion.",
+      "Provided voluntary web development training to students, enhancing their practical skills.",
     ],
-  },
+  }  
 ];
 
 export type educations = {
@@ -425,71 +426,101 @@ export type Project = {
   tags: ProjectTag[];
   image: string;
   source_code_link: string;
+  link?: string;
 };
 
 export const projects: Project[] = [
   {
-    name: "Car Rent",
+    name: "Space Travelers' Hub",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Users can reserve rockets, sign up for space missions, and modify or cancel their bookings through this website. They can also track their mission participation and reservations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/belaymit/space-x-react-redux",
+    link: "https://space-traveler-app-react-redux.onrender.com/"
   },
   {
-    name: "Job IT",
+    name: "Book Store CMS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Users can add or remove books and view the details of the books available in this web application. They can also manage their book collection efficiently.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/belaymit/bookstore-react-redux",
+    link: "https://bookstore-react-redux.onrender.com/"
   },
   {
-    name: "Trip Guide",
+    name: "Movie App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The app enables users to browse a list of movies, like and comment on their favorites, and make reservations. They can also manage and view their movie reservations.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/belaymit/Capstone-module-2",
+    link: "https://belaymit.github.io/Capstone-module-2/dist/"
+  },
+  {
+    name: "Awesome Books",
+    description:
+      "The web app allows users to add books with details, view a list of all books, and delete entries. It also lets users manage and organize their book collection.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: awesome_books,
+    source_code_link: "https://github.com/belaymit/Awesome-books--ES6",
+    link: "https://belaymit.github.io/Awesome-books--ES6/"
   },
 ];
 

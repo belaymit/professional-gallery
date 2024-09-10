@@ -35,9 +35,11 @@ import starbucks from "./company/10academy_logo_small.svg";
 import tesla from "./company/tesla.png";
 import hm_uni from './company/haramaya_university.jpg'
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import carrent from "./space_traveler.png";
+import jobit from "./bookStore.jpeg";
+import tripguide from "./MovieApp.png";
+import awesome_books from './awesome-books.jpg'
+
 
 import miliyon from './testimonials/Miliyon.jpeg'
 import glenda from './testimonials/Glenda.jpeg'
@@ -50,6 +52,8 @@ import birhanu from './testimonials/Birhanu.jpeg'
 
 import astu from './institute/ASTU.png'
 import mit from './institute/mit_logo.jpg'
+import linkImg from './link.png'
+import michu_tech from './michu-tech.jpeg'
 
 export {
   logo,
@@ -96,5 +100,8 @@ export {
   web_dev,
   sass,
   front_end,
-  translator
+  translator,
+  awesome_books,
+  linkImg,
+  michu_tech
 };

@@ -1,7 +1,7 @@
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
-import { github } from "../assets";
+import { github, linkImg } from "../assets";
 import { fadeIn } from "../utils/motion";
 
 type Tag = {
@@ -16,9 +16,10 @@ type Project = {
   tags: Tag[];
   image: string;
   source_code_link: string;
+  link?: string;
 };
 
-export default function ProjectCard({index, name, description, tags, image, source_code_link}: Project){
+export default function ProjectCard({index, name, description, tags, image, source_code_link, link}: Project){
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -64,6 +65,22 @@ export default function ProjectCard({index, name, description, tags, image, sour
               #{tag.name}
             </p>
           ))}
+        </div>
+        <div style={{
+            position: 'absolute',
+            right: '10px',
+            bottom: '10px', 
+        }}>
+        <div
+              onClick={() => window.open(link, "_blank")}
+              className='redish-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={linkImg}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
         </div>
       </Tilt>
     </motion.div>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import {CodeCanvas} from "./canvas";
+import computer from '../assets/full-stack-roadmap.png';
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div>
         <h1 className={`${styles.heroHeadText} text-white`}>
-          Hi, I'm <span className='text-[#d46b41]'>Belay</span>
+          Hello, I'm <span className='text-[#d46b41]'>Belay</span> B.
         </h1>
         <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           Front-end Developer, ML Enthusiast <br className='sm:block hidden' />
@@ -23,9 +23,23 @@ export default function Hero() {
         </p>
       </div>
     </div>
-
-    <CodeCanvas />
-
+    <div className='absolute inset-0 top-40 flex justify-center items-center gap-5'>
+        <motion.img
+        src={computer}
+        alt='Image 2'
+        className='object-contain w-full md:w-[50%]'
+        animate={{
+          y: [0, -20, 0], 
+          rotate: [0, 10, 0],
+        }}
+    transition={{
+      duration: 2, 
+      repeat: Infinity, 
+      repeatType: "loop",
+      ease: "easeInOut",
+    }}
+  />
+    </div>
     <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
       <a href='#about'>
         <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
