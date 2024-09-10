@@ -12,7 +12,7 @@ This is my updated personal portfolio, developed using React.js, TypeScript, Thr
 
 ## Live Demo
 
-[Live Demo Link](https://belay-portfolio.netlify.app/)
+[Live Demo Link](https://sparkly-dusk-40ba88.netlify.app/)
 
 
 ## Getting Started
