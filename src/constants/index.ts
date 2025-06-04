@@ -184,7 +184,7 @@ export const experiences: Experience[] = [
     company_name: "MichuTech Inc.",
     icon: michu_tech,
     iconBg: "#0e60b2",
-    date: "October 2023 - February 2024",
+    date: "December 2023 - September 2024",
     points: [
       "Planning project timelines and ensuring timely delivery of milestones.",
       "Testing functionality of web applications to guarantee quality and performance.",
