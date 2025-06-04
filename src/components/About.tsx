@@ -27,11 +27,7 @@ export default function About () {
        variants={fadeIn("up", "spring", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] leading-[30px]'
       >
-        I'm a skilled frontend developer with a strong background in TypeScript and JavaScript, and deep expertise in frameworks like React, Node.js, Three.js and Next.js. 
-        My experience spans across technologies such as Ant Design, TailwindCSS, Prisma, Strapi, GraphQL, and more. 
-        Additionally, I'm familiar with LLM, machine learning, data analysis, and data cleaning. 
-        I'm a quick learner who enjoys collaborating with clients to create efficient, scalable, and user-centric solutions that address real-world problems. 
-        Let's work together to bring your vision to life!
+        Full-Stack Developer with 4+ years of experience specializing in high-performance web applications using React, TypeScript, Next.js, Node.js, and Python, designed to handle 10,000+ concurrent users. I excel at building scalable frontend architectures with Redux and TanStack Query, crafting optimized UIs with Tailwind CSS, Ant Design, and Three.js, and developing robust backend systems with Node.js, Express, .NET (C#), and GraphQL/REST APIs—all engineered for speed, scalability, and maintainability. With additional expertise in PostgreSQL, Prisma, Strapi, and cloud deployment, I also leverage AI/ML, LLMs, and data analysis to build intelligent, data-driven solutions. A collaborative problem-solver, I thrive on transforming complex challenges into efficient, user-centric applications that deliver real-world impact.
       </motion.p>
 
       <motion.div
